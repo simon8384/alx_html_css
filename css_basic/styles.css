@@ -1,1 +1,75 @@
+/* Layout Enhancements */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  background-color: #0d47a1;
+  color: white;
+  padding: 1.5rem;
+  border-bottom: 5px solid #1976d2;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #0d47a1;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Links */
+a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Article Cards (for tweets.html) */
+article {
+  background-color: #f1f1f1;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 5px solid #1976d2;
+  border-radius: 4px;
+}
+
+article h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #0d47a1;
+}
+
+article p {
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  article h2 {
+    font-size: 1rem;
+  }
+}
 
