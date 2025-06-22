@@ -1,0 +1,152 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #ff6565;
+  --text-color: #fff;
+  --max-width: 1000px;
+  --font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background: #000;
+  color: var(--text-color);
+}
+
+/* Header & Hero styles reused from earlier */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.logo {
+  height: 30px;
+}
+
+.hero {
+  background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+  padding: 100px 20px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: var(--main-color);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 0.9;
+}
+
+.hero-desc {
+  text-align: center;
+  max-width: var(--max-width);
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* What we do */
+.what-we-do {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  color: #333;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  max-width: 300px;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 10px;
+}
+
+.icon {
+  font-size: 50px;
+  color: var(--main-color);
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Our Results Section */
+.our-results {
+  background: #111;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.our-results h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.our-results .section-subtitle {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.results-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.result-item {
+  text-align: center;
+}
+
+.pentagon {
+  width: 100px;
+  height: 100px;
+  background: var(--main-color);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}

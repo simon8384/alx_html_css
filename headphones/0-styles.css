@@ -1,0 +1,118 @@
+/* 0-styles.css */
+
+/* 1. Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Variables */
+:root {
+  --main-color: #ff6565;
+  --text-color: #fff;
+  --max-width: 1000px;
+  --font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* 3. Base styles */
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-image: url('images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* 4. Layout */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 5. Navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: var(--main-color);
+}
+
+/* 6. Logo */
+.logo {
+  height: 30px;
+}
+
+/* 7. Hero Section */
+.hero {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 0.9;
+}
+
+/* 8. Hero Description */
+.hero-desc {
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 20px;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 9. Responsive */
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  body {
+    background-image: url('images/headphones_hero_2.jpg');
+  }
+}

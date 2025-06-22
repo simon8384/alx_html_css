@@ -1,0 +1,26 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.features, .results {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.feature, .result {
+  padding: 20px;
+  background: #ff6565;
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.feature:hover, .result:hover {
+  transform: scale(1.1) rotate(-1deg);
+  opacity: 0.9;
+}
